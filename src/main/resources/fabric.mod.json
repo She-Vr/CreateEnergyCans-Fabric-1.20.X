@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "createenergycans",
+  "version": "${version}",
+  "name": "Create: Energy Cans",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+  },
+  "license": "CC0",
+  "icon": "assets/createenergycans/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.shevr.createenergycans.CreateEnergyCans"
+    ],
+    "client": [
+      "com.shevr.createenergycans.CreateEnergyCansClient"
+    ],
+    "fabric-datagen": [
+      "com.shevr.createenergycans.CreateEnergyCansDataGenerator"
+    ]
+  },
+  "mixins": [
+    "createenergycans.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "create": "${create_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
